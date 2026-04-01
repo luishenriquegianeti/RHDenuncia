@@ -59,8 +59,8 @@ A plataforma foi criada para facilitar a conexão entre clientes e prestadores d
 
 ## 🗄️ Banco de Dados
 O sistema utiliza **MySQL** para armazenar:
-- Dados de clientes  
-- Dados de prestadores  
+- Dados de funcionrio
+- Dados de empresas  
 - Informações de login  
 - Dados de cadastro  
 
@@ -73,6 +73,15 @@ O sistema utiliza **MySQL** para armazenar:
 - O sistema realiza operações de CRUD (Create, Read, Update, Delete)  
 
 ---
+
+## 👨‍💻 Equipe
+- Luis Henrique Gianeti  
+- João Pedro Justino 
+
+---
+
+## 🏫 Instituição
+Centro Universitário das Faculdades Integradas de Ourinhos  
 
 ## 📋 Gerenciamento
 
