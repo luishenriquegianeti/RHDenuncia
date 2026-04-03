@@ -1,0 +1,125 @@
+body{
+        font-family: Arial, Helvetica, sans-serif;
+        background: #2D263B;
+        color: white;
+        
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 15px;
+    }
+    
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    
+    #title{
+        flex-direction: column;
+        line-height: 10px;
+    }
+    
+    li{
+        display: inline-block;
+        margin: 20px;
+       
+        height: 30px;
+    }
+    
+    a{
+        color: white;
+    }
+    
+    a:hover{
+        color: dodgerblue;
+        transition: 0.3s all;
+    }
+    
+    #inscreva-se-btn{
+        border: 2px solid rgb(30,144,255);
+        padding: 10px;
+        border-radius: 15px;
+    }
+    #inscreva-se-btn:hover{
+         background-color: rgb(30,144,255);
+         color: white;
+    }
+    h1{
+        font-weight: 200;
+    
+    }
+    
+    main{
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+    }
+    
+    h2{
+        font-size: 56px;
+        line-height: 10px;
+                  font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    span{
+        color: dodgerblue;
+    
+    }
+    p{
+        line-height: 30px;
+        max-width: 500px;
+                  font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    img{
+        width: 580px;
+    }
+    
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+    form [type="submit"]{
+        height:50px;
+        width: 100%;
+        background-color: dodgerblue;
+        color: white;
+        font-weight: bold;
+    
+    }
+    form [type="submit"]:hover{
+       cursor: pointer;
+    }
+    input{
+        margin-top: 20px;
+        height: 20px;
+        padding: 15px;
+        border-radius: 20px;
+        border: none;
+        font-size: 15px;
+    
+    }
+    .inputSubmit{
+                background-image: linear-gradient(to right, rgb(0,92,197), rgb(90,20,220));
+                width: 100%;
+                border: none;
+                padding: 15px;
+                color: white;
+                font-size: 15px;
+                cursor: pointer;
+                border-radius: 40px;
+                height: 100px;
+            }
+            .inputSubmit:hover{
+                background-image: linear-gradient(to right, rgb(0,80,172), rgb(80,19,195));
+            }
+    .spam-required{
+        font-size: 12px;
+        margin: 5px 0 0 1px;
+        display: none;
+        color: dodgerblue;
+    }
+    

@@ -1,0 +1,63 @@
+body {
+        background-image: linear-gradient(to right, rgb(20,147,220), rgb(90,20,220));
+        color: white;
+        text-align: center;
+    }
+    .table-bg {
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 15px 15px 0 0;
+    }
+    .box-search {
+        display: flex;
+        justify-content: center;
+        gap: .1%;
+    }
+    a{
+        color: white;
+    }
+    
+    a:hover{
+        color: dodgerblue;
+        transition: 0.3s all;
+    }
+   li{
+        display: inline-block;
+        margin: 20px;
+       
+        height: 30px;
+    }
+    a{
+        color: white;
+    }
+    
+    a:hover{
+        color: dodgerblue;
+        transition: 0.3s all;
+    }
+    
+    #inscreva-se-btn{
+        border: 2px solid rgb(30,144,255);
+        padding: 10px;
+        border-radius: 15px;
+    }
+    #inscreva-se-btn:hover{
+         background-color: rgb(30,144,255);
+         color: white;
+    }
+    .inputSubmit{
+                background-image: linear-gradient(to right, rgb(0,92,197), rgb(90,20,220));
+                width: 100%;
+                border: none;
+                padding: 15px;
+                color: white;
+                font-size: 15px;
+                cursor: pointer;
+                border-radius: 40px;
+                height: 100px;
+            }
+            .inputSubmit:hover{
+                background-image: linear-gradient(to right, rgb(0,80,172), rgb(80,19,195));
+            }
+             table, th, td {
+  border: 1px solid black;
+}
