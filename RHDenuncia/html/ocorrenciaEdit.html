@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Viewport" content="width=device-widht, initial-scale=1.0">
+    <title>formulário</title>
+    <style>
+
+        
+    </style>
+</head>
+<body>
+
+
+    <div class="box">
+        <form action="saveocorencia.php" method="POST">
+           
+            <fieldset>
+                <legend><b>ocorrencia</b></legend>
+        
+       
+  
+ <br>
+<label for="datas" ><b>digite a mensagem de resposta sobre o ocorrido </b> </label>
+
+        <textarea class="inputUser" name="feedbeck" id="feedbeck" cold="20" rows="10" oninput="feedbeckValidate()" maxlength="200"placeholder="digite aqui a mensagem ..." required ><?php echo $feedbeck ?> </textarea> 
+        <div class="inputBox">
+        <spam class="spam-required">digite o feedbeck sobre o ocorrido com mais de 20 caracteres </spam>
+        </div>
+
+        
+        
+       
+<br>
+     <input type="submit" name="update" id="update">
+           <br>
+           <br>
+           <a href="comsultarOcorrencia.php"  id="inscreva-se-btn">  <li> Voltar ? </li></a>
+           
+            <input type="hidden" name="id" value="<?php echo $id ?>">
+</div>
+       
+ 
+   
+         
+    
+        
+        </forma>
+        </form>
+    </fieldset>
+    </div>
+</body>
+<script>
+           
+</script>
+</html>

@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<title>Sistema RHDenuncia</title>
+
+<ul>
+           <a href="comsultarOcorrencia.php"id="inscreva-se-btn"><li>consultar ocorrência </li></a>
+           <a href="comsultarFuncionario.php" id="inscreva-se-btn"><li>consultar funcionários</li></a>
+            
+        <a href="sair.php" id="inscreva-se-btn" class="btn btn-danger me-5"> </li>Sair </li></a>
+        
+        </ul>
+        </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+  
+</nav>
+<br>
+<?php
+echo "<h1>Bem-vindo <u>$logado</u></h1>";
+?>
+<br>
+<h2><span>Dados da empresa</span></h2>
+<br>
+<br>     
+<div class="m-5">
+    <table class="table text-white table-bg"> 
+        <thead> 
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Cnpj</th>
+                <th scope="col">Inscrição estado</th>
+                <th scope="col">Endereço</th>
+                <th scope="col">Cidade</th>
+                <th scope="col">Cep</th>
+                <th scope="col">E-mail</th>
+                <th scope="col">Senha</th>
+                <th scope="col">Senha1</th>
+                <th scope="col">Sites</th>
+                <th scope="col">Ramo</th>
+                <th scope="col">Estado</th>
+                  <th scope="col">opção</th>
+            </tr>
+        </thead>
+
+        <tbody> 
+
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

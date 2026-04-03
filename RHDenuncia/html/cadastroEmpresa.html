@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Viewport" content="width=device-widht, initial-scale=1.0">
+    <title>formulário</title>
+    </head>
+<body>
+    <div class="box">
+    <form action="cadastro de empresa.php" method="POST">
+            <fieldset>
+                <legend><b>Cadastro de Empresa</b></legend>
+        <br>
+        <div class="inputBox">
+            
+           <input type="text" name="nome" id="nome" class="inputUser" maxlength="30"oninput="nameValidate()"required>
+           <label for="nome" class="lebolinput">Digite o nome da empresa:</label>
+           <spam class="spam-required">Digite um nome com mais de 2 caracteres </spam>  
+
+        </div>
+        <br>
+        <div class="inputBox">
+           
+            <input type="number" name="cnpj" id="cnpj" class="inputUser" maxlength="10"oninput="cnpjValidate()"required>
+            <label for="cnpj"class="lebolinput">Digite o cnpj da empresa: </label>
+            <spam class="spam-required">Digite cnpj com 10 ou mais</spam>  
+
+        </div>
+        <br>
+        <div class="inputBox">
+            
+            <input type="text" name="inscEstad" id="inscEstad" class="inputUser" maxlength="11"oninput="insValidate()" required>
+            <label for="inscEstad"class="lebolinput">Digite a escrição do estadual </label>
+            <spam class="spam-required">Digite código da inscrição do estadual com 11</spam>  
+
+        </div>
+        <br>
+        <div class="inputBox">
+            
+            <input type="text" name="endereco" id="endereco" class="inputUser" maxlength="30"oninput="endereValidate()"required>
+            <label for="endereco"class="lebolinput">Digite o endereço da empresa: </label>
+            <spam class="spam-required">Digite o endereço onde fica a empresa com mais de 6 caracteres</spam>
+        </div>
+        <br>
+        <div class="inputBox">
+           
+            <input type="text" name="cidade" id="cidade" class="inputUser" maxlength="50"oninput="cidadeValidate()"required>
+            <label for="cidade"class="lebolinput">Digite o nome da cidade onde está a empresa:</label>
+            <spam class="spam-required">Digite o nome da cidade onde fica a empresa com mais de 6 caracteres</spam>
+        </div>
+        <br>
+        
+        </select>
+        
+        
+        <div class="inputBox">
+           
+            <input type="number" name="cep" id="cep" class="inputUser" maxlength="8"oninput="cepValidate()" required>
+            <label for="cep"class="lebolinput">Digite o cep: </label>
+            <spam class="spam-required">Digite o cep da empresa com 8</spam>
+           
+        </div>
+        <br>
+    
+        
+    <div class="inputBox">
+    <input type="text" name="email" id="email" class="inputUser" maxlength="50"oninput="emailValidate()" required>
+    <label for="email"class="lebolinput">Digite o e-mail da empresa: </label>
+    <spam class="spam-required">Digite um e-mail valido e-mail</spam>
+</div>
+<br>
+
+    
+
+    <div class="inputBox">
+           
+           <input type="password" name="senha" id="senha" class="inputUser" maxlength="20" oninput="senhaValidate()" required>
+           <label for="senha"class="lebolinput">Digite uma senha: </label>
+           <spam class="spam-required">Digite uma senha com mais 5 caracteres</spam>
+          
+       </div>
+        <br>
+       <div class="inputBox">
+          
+           <input type="password" name="senha1" id="senha1" class="inputUser"maxlength="20" oninput="senha1Validate()" required>
+           <label for="senha1"class="lebolinput">Repita a sua senha </label>
+           <spam class="spam-required">A senha tem que ser  compatível </spam>
+          
+       </div>
+<br>
+    <div class="inputBox">
+        
+        <input type="text" name="sites" id="sites" class="inputUser" maxlength="50"oninput="siteValidate()"required>
+        <label for="sites"class="lebolinput">Digite o nome do site da empresa: </label>
+        <spam class="spam-required">Digite o nome da empresa com mais de 2 caracteres</spam>
+        
+    </div>
+    <br>
+    <div class="inputBox">
+       
+        <input type="text" name="ramo" id="ramo" class="inputUser" maxlength="50"oninput="ramoValidate()" required>
+        <label for="ramo"class="lebolinput">Digite o ramo da empresa:  </label>
+        <spam class="spam-required">Digite o ramo da empresa com mais de 6 caracteres</spam>
+    </div>
+    <br>
+
+    <select name="estado" id="estado">
+
+            <option value="" class="inputUser"selected>escolha seu estado:</option>
+            <option label="AC">Acre</option>
+            <option label="AL">Alagoas</option>
+            <option label="AP">AMAPÁ</option>
+            <option label="BA">Bahia</option>
+            <option label="CE">Ceará</option>
+            <option label="ES">Espírito Santo</option>
+            <option label="GO">Goiás</option>
+            <option label="MA">Maranhão</option>
+            <option label="MT">Mato Grosso</option>
+            <option label="MS">Mato Grosso do Sul</option>
+            <option label="MG">Minas Gerais</option>
+            <option label="PA">Pará</option>
+            <option label="PB">Paraíba</option> 
+            <option label="PR"> Paraná</option>
+            <option label="PE">Pernambuco</option>
+            <option label="PI">Piauí</option>
+            <option label="RJ">Rio de Janeiro</option>
+            <option label="RN">Rio Grande do Norte</option>
+            <option label="RS"> Rio Grande do Sul</option>
+            <option label="RO">Rondônia</option>
+            <option label="RR">Roraima</option>
+            <option label="SC">Santa Catarina</option>
+            <option label="SP">São Paulo</option>
+            <option label="SE"> Sergipe</option>
+            <option label="TO">Tocantins</option>
+</select>
+<div>
+         <br>
+           <input type="submit" name="submit" id="submit"onclick="exibirNome()">
+         
+         <br>
+    <br>
+           <a href="index.php" id="inscreva-se-btn">   <li> voltar a tela inicial ? </li></a>
+</div>
+        </div>
+        </form>
+
+    </fieldset>
+    
+
+
+
+   
+    </div>
+</body>
+</html>

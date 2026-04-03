@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Viewport" content="width=device-widht, initial-scale=1.0">
+    <title>formulário</title>
+    <style>
+         </style>
+</head>
+<body>
+
+
+    <div class="box">
+      
+        <form action="saveeditcadastroFuncionario1.php" method="POST">
+           
+            <fieldset>
+                <legend><b>cadastro de funcionario</b></legend>
+        <br>
+        <div class="inputBox">
+            
+           <input type="text" name="nome" id="nome" class="inputUser" oninput="nameValidate()"maxlength="50" value="<?php echo $nome ?>" required> 
+           <label for="nome" class="lebolinput"> Digite seu nome completo</label>
+           <spam class="spam-required">digite um nome com mais 2 caracteres </spam>      
+
+        </div>
+        <br>
+        <div class="inputBox">
+           
+            <input type="text" name="telefone" id="telefone" class="inputUser"oninput="teleValidate()" maxlength="12" value="<?php echo $telefone ?>"required>
+            <label for="telefone"class="lebolinput">Digite seu telefone </label>
+            <spam class="spam-required">digite o numero de telefone com 12 caracteres </spam>
+        </div>
+        <br>
+        <div class="inputBox">
+            
+            <input type="text" name="cpf" id="cpf" class="inputUser" oninput="cpfValidate()" maxlength="11"value="<?php echo $cpf ?>" required>
+            <label for="cpf"class="lebolinput">Digite seu cpf </label>
+            <spam class="spam-required">digite o numero do seu  cpf com 11  </spam>
+
+        </div>
+        <br>
+        <div class="inputBox">
+            
+            <input type="text" name="rg" id="rg" class="inputUser" oninput="RGValidate()" maxlength="12"value="<?php echo $rg ?>"required>
+            <label for="rg"class="lebolinput">Digite seu RG </label>
+            <spam class="spam-required">digite o numero do seu RG com 12 </spam>
+
+        </div>
+        <br>
+        <div class="inputBox">
+           
+            <input type="text" name="cargo" id="cargo" class="inputUser" oninput="cargoValidate()" maxlength="25"value="<?php echo $cargo ?>" required>
+            <label for="cargo"class="lebolinput">Digite o nome do seu cargo </label>
+            <spam class="spam-required">digite o nome do cargo com mais de 3 caracteres</spam>
+
+        </div>
+        
+        <br>
+        <div class="inputBox">
+           
+            <input type="text" name="cidade" id="cidade" class="inputUser"oninput="cidadeValidate()" maxlength="30"value="<?php echo $cidade ?>"required>
+            <label for="cidade"class="lebolinput">Digite a cidade onde mora: </label>
+            <spam class="spam-required">digite o nome da cidade com mais de 6 caracteres</spam>
+           
+        </div>
+        <br>
+        <div class="inputBox">
+           
+            <input type="text" name="numDepend" id="numDepend" class="inputUser"oninput="nedeValidate()"maxlength="20" value="<?php echo $numDepend ?>" required>
+            <label for="numDepend"class="lebolinput">Digite o numero de departamento da empresa </label>
+            <spam class="spam-required">digite o nome da cidade com mais de 6 caracteres</spam>
+           
+        </div>
+        <br>
+        <div class="inputBox">
+           
+            <input type="password" name="senha" id="senha" class="inputUser" oninput="senhaValidate()" maxlength="20"value="<?php echo $senha ?>" required>
+            <label for="senha"class="lebolinput">Digite uma senha: </label>
+            <spam class="spam-required">digite uma senha com mais 5 caracteres</spam>
+           
+        </div>
+         <br>
+        <div class="inputBox">
+           
+            <input type="password" name="senha1" id="senha1" class="inputUser" oninput="senha1Validate()"maxlength="20"value="<?php echo $senha1 ?>" required>
+            <label for="senha1"class="lebolinput">Repita a sua senha </label>
+            <spam class="spam-required">a senha tem que ser compativeis </spam>
+           
+        </div>
+        <br>
+
+        <div class="inputBox">
+
+        <input type="text" name="email_funcionario" id="email_funcionario" class="inputUser" oninput="emailValidate()" maxlength="50"value="<?php echo $email_funcionario ?>" required>
+        <label for="email_funcionario"class="lebolinput">Digite o seu email:  </label>
+        <spam class="spam-required">digite um email valido email</spam>
+    </div>
+    <br>
+    <div class="inputBox">
+       
+        <input type="number" name="codigo_empresa" id="codigo_empresa" class="inputUser"oninput="codgValidate()"maxlength="50"value="<?php echo $codigo_empresa ?>"  required>
+        <label for="codigo_empresa"class="lebolinput">Digite o codigo da empresa em que esta:  </label>
+        <spam class="spam-required">digite com mais 1 caracteres</spam>
+
+    </div>
+    <br>
+
+        <div class="inputBox">
+        
+            <select name="estado" id="estado">
+
+                <option label="<?php echo $estado ?>"required><?php echo $estado?></option>
+                <option label="AC">Acre</option>
+                <option label="AL">Alagoas</option>
+                <option label="AP">AMAPÁ</option>
+                <option label="BA">Bahia</option>
+                <option label="CE">Ceará</option>
+                <option label="ES">Espírito Santo</option>
+                <option label="GO">Goiás</option>
+                <option label="MA">Maranhão</option>
+                <option label="MT">Mato Grosso</option>
+                <option label="MS">Mato Grosso do Sul</option>
+                <option label="MG">Minas Gerais</option>
+                <option label="PA">Pará</option>
+                <option label="PB">Paraíba</option>
+                <option label="PR"> Paraná</option>
+                <option label="PE">Pernambuco</option>
+                <option label="PI">Piauí</option>
+                <option label="RJ">Rio de Janeiro</option>
+                <option label="RN">Rio Grande do Norte</option>
+                <option label="RS"> Rio Grande do Sul</option>
+                <option label="RO">Rondônia</option>
+                <option label="RR">Roraima</option>
+                <option label="SC">Santa Catarina</option>
+                <option label="SP">São Paulo</option>
+                <option label="SE"> Sergipe</option>
+                <option label="TO">Tocantins</option>
+            </select>
+            </div>
+          
+            
+        
+
+       
+ <div>
+ <br>
+           <input type="submit" name="updatee" id="updatee">
+           <br>
+           <br>
+           <a href="comsultarfuncionario1.php" id="inscreva-se-btn"> <li>Voltar ? </li></a>
+      
+           
+           
+</div>
+        <input type="hidden" name="id" value="<?php echo $id?>">
+        </forma>
+        </form>
+    </fieldset>
+    </div>
+</body>
+<script>
+    
+    </script>
+</html>

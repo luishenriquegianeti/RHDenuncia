@@ -1,0 +1,95 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Viewport" content="width=device-widht, initial-scale=1.0">
+    <title>formulário</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+
+
+    <div class="box">
+        <form action="saveocorencia1.php" method="POST">
+           
+            <fieldset>
+                <legend><b>ocorrencia</b></legend>
+        <br>
+       <div class="inputBox">
+            
+            <input type="text" name="email_funcionario" id="email_funcionario" class="inputUser" oninput="emailValidate()" maxlength="50"value="<?php echo $email_funcionario ?>" required>
+            <label for="cpf"class="lebolinput">Digite seu email </label>
+            <spam class="spam-required">digite um email valido </spam>
+        </div>
+        <br>
+        <div class="inputBox">
+            
+            <input type="text" name="codigo_empresa" id="codigo_empresa" class="inputUser" oninput="codigo_empresavalidate()" maxlength="12"value="<?php echo $codigo_empresa ?>" required>
+            <label for="codigo_empresa"class="lebolinput">Digite o codigo da emprea</label>
+            <spam class="spam-required">digite o numero com mais de 1 caracter  </spam>
+        </div>
+        <br>
+        <div class="inputBox">
+           
+            <input type="text" name="numBO" id="numBO" class="inputUser" oninput="numBOValidate()" maxlength="25" 
+            value="<?php echo $numBO ?>"required>
+            <label for="numBO"class="lebolinput">Digite o numero do bolitin de ocorrencia  </label>
+            <spam class="spam-required">digite com mais de 6 caracter </spam>
+        </div>
+        <br>
+        
+        <div class="inputBox">
+<label for="datas" ><b>digite detalhadamente o que aconteceu nesse dia </b> </label>
+
+        <textarea class="inputUser" name="historico" id="historico" cold="20" rows="10" oninput="histoValidate()" maxlength="300"placeholder="fale o ocorrido aqui ..." required><?php echo $historico ?> </textarea> 
+        <div class="inputBox">
+        <spam class="spam-required">digite o acontecimento do ocorrido com mais de 100 caracteres </spam>
+        </div>
+        <br>
+           <div class="inputBox">
+ <label for="datas" ><b>coloque o dia o mês do acontecimento</b> </label>
+        <input type="date" name="datas" id="datas" class="inputUser" oninput="data()"maxlength="50" value="<?php echo $data ?>"   required>
+        
+ </div>
+ <br>
+    <div class="inputBox">
+        <label for="hora"><b>Digite a horas que aconteceu</b> </label>
+        <input type="time" name="hora" id="hora" class="inputUser" oninput="horas()"maxlength="30" value="<?php echo $hora ?>" required>
+       
+   </div> 
+  
+ <br>
+        
+
+        
+        
+       
+
+        <br>
+     <input type="submit" name="updatee" id="updatee">
+           <br>
+           <br>
+           <a href="comsultarOcorrencia1.php"  id="inscreva-se-btn">  <li> Voltar ? </li></a>
+           
+            <input type="hidden" name="id" value="<?php echo $id ?>">
+</div>
+       
+ 
+   
+         
+    
+        
+        </forma>
+        </form>
+    </fieldset>
+    </div>
+</body>
+<script>
+
+    </script>
+</html>
