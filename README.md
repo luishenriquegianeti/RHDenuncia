@@ -96,5 +96,3 @@ O sistema utiliza **MySQL** para armazenar:
 
 # Importe o banco de dados no phpMyAdmin
 
-# Acesse no navegador
-http://localhost/rhdenuncia
