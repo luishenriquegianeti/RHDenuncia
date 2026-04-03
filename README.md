@@ -1,7 +1,7 @@
-# 🚀 WorkManager (Web PHP)
+# 🚀 RHDenúncia (Web PHP)
 
 <p align="center">
-  Plataforma para intermediação de serviços entre clientes e prestadores
+  Plataforma para envio de denúncias corporativas de forma segura e anônima
 </p>
 
 <p align="center">
@@ -10,7 +10,7 @@
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
   <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white"/>
   <img src="https://img.shields.io/badge/MySQL-00758F?style=for-the-badge&logo=mysql&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Status-Concluído-green?style=for-the-badge"/>
 </p>
 
 ---
@@ -24,27 +24,26 @@ Agradeço a Deus por ter colocado essas pessoas no meu caminho, sempre me guiand
 ---
 
 ## 📌 Sobre o Projeto
-O **WorkManager** é uma aplicação web desenvolvida com **HTML, CSS, JavaScript e PHP**, integrada ao banco de dados **MySQL**.
+O **RHDenúncia** é uma aplicação web desenvolvida com **HTML, CSS, JavaScript e PHP**, integrada ao banco de dados **MySQL**.
 
-A plataforma foi criada para facilitar a conexão entre clientes e prestadores de serviços, permitindo uma navegação simples, eficiente e acessível.
+O sistema foi criado com o objetivo de permitir que funcionários realizem denúncias diretamente ao setor de Recursos Humanos (RH), de forma segura e, se desejado, totalmente anônima.
 
 ---
 
 ## 🎯 Objetivo
-- Criar uma plataforma web acessível  
-- Facilitar a busca por serviços  
-- Melhorar a comunicação entre usuários  
-- Oferecer uma experiência prática e intuitiva  
+- Facilitar o envio de denúncias corporativas  
+- Proteger a identidade dos funcionários  
+- Melhorar a comunicação com o RH  
+- Promover um ambiente de trabalho mais seguro  
 
 ---
 
 ## ⚙️ Funcionalidades
-- Cadastro de clientes e prestadores  
-- Sistema de login e autenticação  
-- Listagem de dados em tabelas  
-- Sistema de busca  
-- Edição e exclusão de registros  
-- Validação de dados no formulário  
+- Envio de denúncias com ou sem identificação  
+- Formulário com relato detalhado  
+- Armazenamento seguro das informações  
+- Sistema simples e acessível  
+- Interface intuitiva  
 
 ---
 
@@ -59,41 +58,32 @@ A plataforma foi criada para facilitar a conexão entre clientes e prestadores d
 
 ## 🗄️ Banco de Dados
 O sistema utiliza **MySQL** para armazenar:
-- Dados de funcionrio
-- Dados de empresas  
-- Informações de login  
-- Dados de cadastro  
+- Dados das denúncias  
+- Informações (quando fornecidas) dos funcionários  
+- Dados das empresas  
+- Registros do sistema  
 
 ---
 
 ## 🔄 Funcionamento do Sistema
-- O front-end é responsável pela interface do usuário  
-- O **PHP** faz o processamento das requisições  
-- O **MySQL** armazena e gerencia os dados  
-- O sistema realiza operações de CRUD (Create, Read, Update, Delete)  
+- O usuário acessa o site e preenche o formulário de denúncia  
+- Pode optar por envio **anônimo ou identificado**  
+- O **PHP** processa e envia os dados  
+- O **MySQL** armazena as informações  
+- O RH pode acessar os dados para análise  
 
 ---
-
-## 👨‍💻 Equipe
-- Luis Henrique Gianeti  
-- João Pedro Justino 
-
----
-
-## 🏫 Instituição
-Centro Universitário das Faculdades Integradas de Ourinhos  
 
 ## 📋 Gerenciamento
 
 ### 📊 Listagem
-- Exibição de dados em tabelas  
-- Busca por nome, CPF/CNPJ e e-mail  
+- Visualização das denúncias registradas  
 
 ### ✏️ Edição
-- Atualização de dados via formulários  
+- (Opcional, dependendo do sistema)  
 
 ### ❌ Exclusão
-- Remoção de registros diretamente no sistema  
+- Gerenciamento dos registros no banco de dados  
 
 ---
 
@@ -107,4 +97,4 @@ Centro Universitário das Faculdades Integradas de Ourinhos
 # Importe o banco de dados no phpMyAdmin
 
 # Acesse no navegador
-http://localhost/workmanager
+http://localhost/rhdenuncia
