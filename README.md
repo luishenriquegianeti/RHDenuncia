@@ -31,7 +31,7 @@ O sistema foi criado com o objetivo de permitir que funcionários realizem denú
 ---
 
 ## 🏫 Instituição
-Escola Técnica Estadual Professor Pedro Leme Brisolla Sobrinho
+ETEC- Escola Técnica Estadual Professor Pedro Leme Brisolla Sobrinho
 
 ---
 ## 🎯 Objetivo
