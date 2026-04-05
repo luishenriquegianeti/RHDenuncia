@@ -74,7 +74,9 @@ O sistema utiliza **MySQL** para armazenar:
 
 ---
 
-## 📋 Gerenciamento
+## 👨‍💻 Equipe
+- Luis Henrique Gianeti  
+-João Pedro Justino 
 
 ### 📊 Listagem
 - Visualização das denúncias registradas  
