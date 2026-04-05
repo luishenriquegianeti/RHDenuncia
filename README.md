@@ -30,6 +30,10 @@ O sistema foi criado com o objetivo de permitir que funcionários realizem denú
 
 ---
 
+## 🏫 Instituição
+Escola Técnica Estadual Professor Pedro Leme Brisolla Sobrinho
+
+---
 ## 🎯 Objetivo
 - Facilitar o envio de denúncias corporativas  
 - Proteger a identidade dos funcionários  
